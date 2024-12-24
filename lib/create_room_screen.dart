@@ -103,8 +103,16 @@ class _CreateRoomScreenState extends State<CreateRoomScreen> {
             onChanged: (value) => setState(() => _roomSize = value),
           ),
           SizedBox(height: 40),
-
-          
+          ElevatedButton(
+            onPressed: () {},
+            child: Text("Create"),
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.blue,
+              foregroundColor: Colors.white,
+              textStyle: TextStyle(fontSize: 16),
+              minimumSize: Size(MediaQuery.of(context).size.width / 2.5, 50),
+            ),
+          ),
         ],
       ),
     );
