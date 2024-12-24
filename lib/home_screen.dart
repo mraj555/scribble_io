@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:scribble_io/create_room_screen.dart';
+import 'package:scribble_io/join_room_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -41,7 +42,9 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: Text("Create"),
               ),
               ElevatedButton(
-                onPressed: () {},
+                onPressed: () => Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => JoinRoomScreen()),
+                ),
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.blue,
                   foregroundColor: Colors.white,
